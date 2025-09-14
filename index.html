@@ -184,7 +184,6 @@
           <div class="mt-4 flex items-center justify-between">
             <span class="text-sm text-slate-500">SKU: TMD-DELTA</span>
                           <button type="button" class="js-preview inline-flex items-center rounded-xl bg-amber-500 px-3 py-2 text-sm font-medium text-white hover:bg-amber-600" data-key="tableros" data-title="Gabinete Outdoor 32UR">Vista previa</button>
-
           </div>
         </div>
       </article>
@@ -260,7 +259,7 @@
   <!-- Modal de vista previa -->
   <div id="previewModal" class="fixed inset-0 z-[60] hidden">
     <div class="absolute inset-0 bg-black/50" data-close></div>
-    <div class="relative mx-auto my-10 w-[92vw] max-w-4xl rounded-2xl bg-white shadow-xl">
+    <div class="relative mx-auto my-10 w-[92vw] max-w-3xl rounded-2xl bg-white shadow-xl">
       <div class="flex items-center justify-between border-b border-slate-200 p-4">
         <h3 id="modalTitle" class="text-lg font-semibold">Vista previa</h3>
         <button class="rounded-lg p-2 hover:bg-slate-100" aria-label="Cerrar" data-close>
@@ -318,14 +317,14 @@
       const producto = document.getElementById('producto').value;
       const mensaje = document.getElementById('mensaje').value.trim();
       const body = encodeURIComponent(`Hola, soy ${nombre}.
-Producto: ${producto}.
-${mensaje}`);
-      const mailto = `mailto:ventas@tudominio.com?subject=Cotización%20${encodeURIComponent(producto)}&body=${body}`;
-      window.location.href = mailto; // Abre el cliente de correo del usuario
-      const fm = document.getElementById('formMsg');
-      fm.className = 'text-sm mt-2 text-emerald-600';
-      fm.textContent = 'Gracias, abre tu correo para finalizar el envío.';
-    }
+      Producto: ${producto}.
+      ${mensaje}`);
+        const mailto = `mailto:ventas@tudominio.com?subject=Cotización%20${encodeURIComponent(producto)}&body=${body}`;
+        window.location.href = mailto; // Abre el cliente de correo del usuario
+        const fm = document.getElementById('formMsg');
+        fm.className = 'text-sm mt-2 text-emerald-600';
+        fm.textContent = 'Gracias, abre tu correo para finalizar el envío.';
+      }
     window.handleSubmit = handleSubmit;
 
     // ===== Modal de vista previa =====
