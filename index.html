@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soluciones de Instalación – Catálogo</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Catálogo estático de soluciones para instalación: gabinetes outdoor, racks de baterías y tableros de maniobras.">
+  <link rel="icon" href="img/industrias.jpg"/>
+  <style>
+    /* Scroll suave para anclas */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-200">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <!-- Logo / Marca -->
+        <a href="index.html" class="flex items-center gap-2 group" aria-label="Inicio">
+          <img src="img/logo.jpg" alt="Industrias Emalexa SAC" class="h-10 w-auto" />
+          <!-- <span class="font-semibold tracking-tight">Soluciones de Instalación</span> -->
+        </a>
+
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#productos" class="text-sm font-medium hover:text-amber-600">Productos</a>
+          <a href="#nosotros" class="text-sm font-medium hover:text-amber-600">Nosotros</a>
+          <!-- <a href="#contacto" class="text-sm font-medium hover:text-amber-600">Contacto</a> -->
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex items-center gap-2">
+          <!-- <a href="#contacto" class="inline-flex items-center rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-medium hover:border-amber-400 hover:text-amber-700 transition">Cotizar</a> -->
+          <button id="toggleMenu" class="md:hidden p-2 rounded-lg border border-slate-300 hover:border-amber-400" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 py-3">
+        <a href="#productos" class="block px-1 py-2 text-sm font-medium hover:text-amber-600">Productos</a>
+        <a href="#nosotros" class="block px-1 py-2 text-sm font-medium hover:text-amber-600">Nosotros</a>
+        <!-- <a href="#contacto" class="block px-1 py-2 text-sm font-medium hover:text-amber-600">Contacto</a> -->
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+      <div class="grid items-center gap-10 md:grid-cols-2">
+        <div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">Equipos para instalación confiable</h1>
+          <p class="mt-4 text-slate-600 max-w-prose">Gabinetes outdoor, racks de baterías y tableros de maniobra para proyectos eléctricos y de telecomunicaciones. Calidad, protección y soporte técnico.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#productos" class="rounded-xl bg-amber-600 px-4 py-2.5 text-white font-medium shadow hover:bg-amber-700">Ver productos</a>
+            <!-- <a href="#contacto" class="rounded-xl border border-slate-300 bg-white px-4 py-2.5 font-medium hover:border-amber-400">Solicitar cotización</a> -->
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-amber-50 to-slate-100 border border-slate-200 grid place-items-center shadow-sm">
+            <img src="img/industrias.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buscador / Filtros -->
+  <section id="productos" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Productos</h2>
+      <div class="flex items-center gap-2">
+        <label for="q" class="sr-only">Buscar</label>
+        <input id="q" type="search" placeholder="Buscar producto…" class="w-full sm:w-72 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+        <button id="btnClear" class="rounded-xl border border-slate-300 px-3 py-2 text-sm hover:border-amber-400">Limpiar</button>
+      </div>
+    </div>
+
+    <!-- Grid de productos -->
+    <div id="grid" class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card: GABINETE OUDOOR 32UR -->
+      <article class="product card rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden" data-title="gabinete oudor 32ur gabinete outdoor 32ur">
+        <div class="aspect-[4/3] bg-slate-100">
+          <img src="img/GABINETE OUDOOR 32UR/1 principal.jfif" alt="Gabinete Outdoor 32UR" class="h-full w-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Gabinete+Outdoor+32UR'">
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Gabinete Outdoor 32UR</h3>
+          <p class="mt-1 text-sm text-slate-600">Gabinete de intemperie de alta resistencia para equipos de telecomunicaciones y TI. Sellado IP para protección contra polvo y lluvia.</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-1">
+            <li>Estructura robusta | acero/aliación</li>
+            <li>Gestión térmica (ventilación / ventiladores)</li>
+            <li>Opciones de montaje en base o poste</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-sm text-slate-500">SKU: OUT-32UR</span>
+            <div class="flex gap-2">
+              <button type="button" class="js-preview inline-flex items-center rounded-xl bg-amber-500 px-3 py-2 text-sm font-medium text-white hover:bg-amber-600" data-key="OUT-32UR" data-title="Gabinete Outdoor 32UR">Vista previa</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: RACK DE BATERIAS -->
+      <article class="product card rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden" data-title="rack de baterias">
+        <div class="aspect-[4/3] bg-slate-100">
+          <img src="img/RACK DE BATERIAS/1 principal.jpeg" alt="Rack de Baterías" class="h-full w-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Rack+de+Baterias'">
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Rack de Baterías</h3>
+          <p class="mt-1 text-sm text-slate-600">Estructura modular para bancos de baterías. Diseño estable y seguro, ideal para salas de respaldo energético.</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-1">
+            <li>Soporta múltiples formatos (VRLA/Li-ion)</li>
+            <li>Acabado anticorrosivo</li>
+            <li>Opciones de anclaje al piso</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-sm text-slate-500">SKU: RB-STD</span>
+              <button type="button" class="js-preview inline-flex items-center rounded-xl bg-amber-500 px-3 py-2 text-sm font-medium text-white hover:bg-amber-600" data-key="rack-baterias" data-title="Rack de Baterias">Vista previa</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: RACK PARA BATERIAS -->
+      <article class="product card rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden" data-title="rack para baterias">
+        <div class="aspect-[4/3] bg-slate-100">
+          <img src="img/RACK PARA BATERIAS/1 principal.jpeg" alt="Rack para Baterías" class="h-full w-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Rack+para+Baterias'">
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Rack para Baterías</h3>
+          <p class="mt-1 text-sm text-slate-600">Configuración personalizable de niveles y separación. Optimiza el uso del espacio y la ventilación.</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-1">
+            <li>Capacidad por nivel configurable</li>
+            <li>Gestión de cableado integrada</li>
+            <li>Compatible con sistemas UPS</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-sm text-slate-500">SKU: RPB-MOD</span>
+                          <button type="button" class="js-preview inline-flex items-center rounded-xl bg-amber-500 px-3 py-2 text-sm font-medium text-white hover:bg-amber-600" data-key="rack-para-baterias" data-title="Gabinete Outdoor 32UR">Vista previa</button>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: RACK PARA BATERIAS 1500A - DELTA -->
+      <article class="product card rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden" data-title="rack para baterias 1500a delta 1500a">
+        <div class="aspect-[4/3] bg-slate-100">
+          <img src="img/RACK PARA BATERIAS 1500A-DELTA/1 principal.jpg" alt="Rack para Baterías 1500A - DELTA" class="h-full w-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Rack+1500A+DELTA'">
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Rack para Baterías 1500A – DELTA</h3>
+          <p class="mt-1 text-sm text-slate-600">Rack de alta capacidad para aplicaciones industriales. Diseñado para corrientes de hasta 1500A con estándares de seguridad.</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-1">
+            <li>Estructura reforzada y barras colectoras</li>
+            <li>Aislamiento y protecciones según norma</li>
+            <li>Integración con sistemas DELTA</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-sm text-slate-500">SKU: RPB-1500A</span>
+                          <button type="button" class="js-preview inline-flex items-center rounded-xl bg-amber-500 px-3 py-2 text-sm font-medium text-white hover:bg-amber-600" data-key="baterias-1500A" data-title="Gabinete Outdoor 32UR">Vista previa</button>
+
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: TABLERO DE MANIOBRAS - DELTA -->
+      <article class="product card rounded-2xl border border-slate-200 bg-white shadow-sm overflow-hidden" data-title="tablero de maniobras delta tablero maniobras">
+        <div class="aspect-[4/3] bg-slate-100">
+          <img src="img/TABLERO DE MANIOBRAS - DELTA/1 principal.jpg" alt="Tablero de Maniobras – DELTA" class="h-full w-full object-cover" onerror="this.src='https://placehold.co/800x600?text=Tablero+de+Maniobras+DELTA'">
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Tablero de Maniobras – DELTA</h3>
+          <p class="mt-1 text-sm text-slate-600">Tablero para maniobra y protección con componentes de calidad DELTA. Configurable según esquema unifilar del proyecto.</p>
+          <ul class="mt-3 text-sm text-slate-700 list-disc list-inside space-y-1">
+            <li>Seccionamiento, protección y medición</li>
+            <li>Canalización y etiquetado profesional</li>
+            <li>Listo para integración SCADA</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <span class="text-sm text-slate-500">SKU: TMD-DELTA</span>
+                          <button type="button" class="js-preview inline-flex items-center rounded-xl bg-amber-500 px-3 py-2 text-sm font-medium text-white hover:bg-amber-600" data-key="tableros" data-title="Gabinete Outdoor 32UR">Vista previa</button>
+
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="bg-white border-y border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid gap-8 md:grid-cols-2 items-center">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Sobre nosotros</h2>
+          <p class="mt-4 text-slate-600">Somos especialistas en soluciones para instalaciones eléctricas y de telecomunicaciones. Brindamos asesoría técnica, fabricación e implementación con estándares de calidad y seguridad.</p>
+          <ul class="mt-4 text-slate-700 list-disc list-inside space-y-1">
+            <li>Diseño y fabricación</li>
+            <li>Instalación y puesta en servicio</li>
+            <li>Soporte y mantenimiento</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 aspect-[4/3] grid place-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="h-28 w-28 text-slate-400">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <!-- <section id="contacto" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid gap-8 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Solicita una cotización</h2>
+        <p class="mt-3 text-slate-600">Cuéntanos sobre tu proyecto y te contactamos.
+        </p>
+        <div class="mt-6 space-y-3 text-slate-700">
+          <p><strong>Correo:</strong> <a href="mailto:ventas@tudominio.com" class="text-amber-700 hover:underline">ventas@tudominio.com</a></p>
+          <p><strong>Teléfono/WhatsApp:</strong> <a href="https://wa.me/51999999999" class="text-amber-700 hover:underline" target="_blank" rel="noopener">+51 999 999 999</a></p>
+          <p><strong>Dirección:</strong> Lima, Perú</p>
+        </div>
+      </div>
+      <form class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm" onsubmit="handleSubmit(event)">
+        <div class="grid gap-4">
+          <div>
+            <label for="nombre" class="block text-sm font-medium">Nombre</label>
+            <input id="nombre" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input id="email" type="email" required class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+          </div>
+          <div>
+            <label for="producto" class="block text-sm font-medium">Producto de interés</label>
+            <select id="producto" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500">
+              <option value="Gabinete Outdoor 32UR">Gabinete Outdoor 32UR</option>
+              <option value="Rack de Baterías">Rack de Baterías</option>
+              <option value="Rack para Baterías">Rack para Baterías</option>
+              <option value="Rack para Baterías 1500A – DELTA">Rack para Baterías 1500A – DELTA</option>
+              <option value="Tablero de Maniobras – DELTA">Tablero de Maniobras – DELTA</option>
+            </select>
+          </div>
+          <div>
+            <label for="mensaje" class="block text-sm font-medium">Mensaje</label>
+            <textarea id="mensaje" rows="4" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Cantidad, plazos, ubicación de instalación, etc."></textarea>
+          </div>
+          <button type="submit" class="rounded-xl bg-amber-600 px-4 py-2.5 text-white font-medium hover:bg-amber-700">Enviar</button>
+          <p id="formMsg" class="hidden text-sm"></p>
+        </div>
+      </form>
+    </div>
+  </section> -->
+  <!-- Modal de vista previa -->
+  <div id="previewModal" class="fixed inset-0 z-[60] hidden">
+    <div class="absolute inset-0 bg-black/50" data-close></div>
+    <div class="relative mx-auto my-10 w-[92vw] max-w-4xl rounded-2xl bg-white shadow-xl">
+      <div class="flex items-center justify-between border-b border-slate-200 p-4">
+        <h3 id="modalTitle" class="text-lg font-semibold">Vista previa</h3>
+        <button class="rounded-lg p-2 hover:bg-slate-100" aria-label="Cerrar" data-close>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5"><path d="M6 6l12 12M18 6l-12 12"/></svg>
+        </button>
+      </div>
+      <div class="p-4">
+        <div class="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
+          <img id="modalImage" src="" alt="Vista previa de producto" class="h-full w-full object-contain" onerror="this.src='https://placehold.co/1000x750?text=Vista+previa'">
+          <button id="prevBtn" class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full border border-slate-300 bg-white/90 px-3 py-2 text-sm shadow hover:bg-white">◀</button>
+          <button id="nextBtn" class="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border border-slate-300 bg-white/90 px-3 py-2 text-sm shadow hover:bg-white">▶</button>
+        </div>
+        <div id="thumbs" class="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-2"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+      <p class="text-sm text-slate-500">© Industrias Emalexa <span id="y"></span> . Todos los derechos reservados.</p>
+      <!-- <div class="text-sm text-slate-500"></div> -->
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    // Año actual en el footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Menú mobile
+    const toggle = document.getElementById('toggleMenu');
+    const mobile = document.getElementById('mobileMenu');
+    toggle?.addEventListener('click', () => mobile.classList.toggle('hidden'));
+
+    // Buscador simple por título
+    const q = document.getElementById('q');
+    const clearBtn = document.getElementById('btnClear');
+    const cards = Array.from(document.querySelectorAll('.product'));
+    function filter() {
+      const term = (q.value || '').toLowerCase().trim();
+      cards.forEach(card => {
+        const matches = card.dataset.title.includes(term);
+        card.style.display = term && !matches ? 'none' : '';
+      });
+    }
+    q.addEventListener('input', filter);
+    clearBtn.addEventListener('click', () => { q.value = ''; filter(); q.focus(); });
+
+    // Manejo de "envío" del formulario de contacto (simulado)
+    function handleSubmit(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const producto = document.getElementById('producto').value;
+      const mensaje = document.getElementById('mensaje').value.trim();
+      const body = encodeURIComponent(`Hola, soy ${nombre}.
+Producto: ${producto}.
+${mensaje}`);
+      const mailto = `mailto:ventas@tudominio.com?subject=Cotización%20${encodeURIComponent(producto)}&body=${body}`;
+      window.location.href = mailto; // Abre el cliente de correo del usuario
+      const fm = document.getElementById('formMsg');
+      fm.className = 'text-sm mt-2 text-emerald-600';
+      fm.textContent = 'Gracias, abre tu correo para finalizar el envío.';
+    }
+    window.handleSubmit = handleSubmit;
+
+    // ===== Modal de vista previa =====
+    const galleryMap = {
+      'OUT-32UR': [
+        'img/GABINETE OUDOOR 32UR/1 principal.jfif',
+        'img/GABINETE OUDOOR 32UR/2.jfif',
+        'img/GABINETE OUDOOR 32UR/3.jfif',
+        'img/GABINETE OUDOOR 32UR/4.jfif',
+        'img/GABINETE OUDOOR 32UR/5.jfif',
+        'img/GABINETE OUDOOR 32UR/6.jfif',
+        'img/GABINETE OUDOOR 32UR/7.jfif',
+        'img/GABINETE OUDOOR 32UR/8.jfif',
+        'img/GABINETE OUDOOR 32UR/9.jfif',
+        'img/GABINETE OUDOOR 32UR/10.jfif',
+      ],
+
+      'rack-baterias': [
+        'img/RACK DE BATERIAS/1 principal.jpeg',
+        'img/RACK DE BATERIAS/2.jpeg',
+        'img/RACK DE BATERIAS/3.jpeg',
+        'img/RACK DE BATERIAS/4.jpeg',
+        'img/RACK DE BATERIAS/5.jpeg',
+        'img/RACK DE BATERIAS/6.jpeg',
+        'img/RACK DE BATERIAS/7.jpeg',
+        'img/RACK DE BATERIAS/8.jpeg',
+        'img/RACK DE BATERIAS/9.jpeg',
+      ],
+
+      'rack-para-baterias': [
+        'img/RACK PARA BATERIAS/1 principal.jpeg',
+        'img/RACK PARA BATERIAS/2.jpeg',
+        'img/RACK PARA BATERIAS/3.jpeg',
+        'img/RACK PARA BATERIAS/4.jpeg',
+        'img/RACK PARA BATERIAS/5.jpeg',
+        'img/RACK PARA BATERIAS/6.jpeg',
+        'img/RACK PARA BATERIAS/7.jpeg',
+        'img/RACK PARA BATERIAS/8.jpeg',
+      ],
+
+      'baterias-1500A': [
+        'img/RACK PARA BATERIAS 1500A-DELTA/1 principal.jpg',
+        'img/RACK PARA BATERIAS 1500A-DELTA/2.jpg',
+        'img/RACK PARA BATERIAS 1500A-DELTA/3.jpg',
+        'img/RACK PARA BATERIAS 1500A-DELTA/4.jpg',
+        'img/RACK PARA BATERIAS 1500A-DELTA/5.jpg',
+        'img/RACK PARA BATERIAS 1500A-DELTA/6.jpg',
+        'img/RACK PARA BATERIAS 1500A-DELTA/7.jpg',
+      ],
+
+      'tableros': [
+        'img/TABLERO DE MANIOBRAS - DELTA/1 principal.jpg',
+        'img/TABLERO DE MANIOBRAS - DELTA/2.jpg',
+        'img/TABLERO DE MANIOBRAS - DELTA/3.jpg',
+        'img/TABLERO DE MANIOBRAS - DELTA/4.jpg',
+        'img/TABLERO DE MANIOBRAS - DELTA/5.jpg',
+        'img/TABLERO DE MANIOBRAS - DELTA/6.jpg',
+      ],
+      // Agrega más claves por SKU si deseas más galerías
+    };
+
+    let currentKey = null, idx = 0;
+    const previewModal = document.getElementById('previewModal');
+    const modalImg = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const thumbs = document.getElementById('thumbs');
+
+    function renderModal() {
+      const imgs = galleryMap[currentKey] || [];
+      if (!imgs.length) return;
+      modalImg.src = imgs[idx];
+      thumbs.innerHTML = '';
+      imgs.forEach((src, i) => {
+        const b = document.createElement('button');
+        b.className = 'aspect-[4/3] w-full overflow-hidden rounded-lg border border-slate-200 hover:ring-2 hover:ring-amber-400';
+        b.innerHTML = `<img src="${src}" class="h-full w-full object-cover">`;
+        if (i === idx) b.classList.add('ring-2','ring-amber-500');
+        b.addEventListener('click', () => { idx = i; renderModal(); });
+        thumbs.appendChild(b);
+      });
+    }
+
+    function openPreview(key, title) {
+      const imgs = galleryMap[key] || [];
+      if (!imgs.length) { alert('No hay imágenes adicionales para este producto.'); return; }
+      currentKey = key; idx = 0;
+      modalTitle.textContent = title || 'Vista previa';
+      renderModal();
+      previewModal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closePreview() {
+      previewModal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    document.querySelectorAll('.js-preview').forEach(btn => {
+      btn.addEventListener('click', () => openPreview(btn.dataset.key, btn.dataset.title));
+    });
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      const imgs = galleryMap[currentKey];
+      idx = (idx - 1 + imgs.length) % imgs.length;
+      renderModal();
+    });
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      const imgs = galleryMap[currentKey];
+      idx = (idx + 1) % imgs.length;
+      renderModal();
+    });
+
+    previewModal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closePreview));
+    window.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !previewModal.classList.contains('hidden')) closePreview(); });
+  </script>
+</body>
+</html>
